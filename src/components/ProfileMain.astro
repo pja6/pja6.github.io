@@ -7,13 +7,13 @@ const { current = '' } = Astro.props;
 <!-- Main Section -->
 <main>
 
-    <section class="user-network">
-      <header>
+    <section class="user-network pt-5">
+      <header class="border border-2 border-black p-1">
         <h2>Paul could be in your extended network</h2>
       </header>
     </section>
 
-
+    <br>
     <section class="blurbs">
       <header class="main-section-header">
         <h2 class="main-section-h2">Paul's Blurbs</h2>
@@ -39,7 +39,7 @@ const { current = '' } = Astro.props;
         <h2 class="main-section-h2">Paul's Language/Tool Space</h2>
       </header>
 
-      <div class="friend-pic-container">
+      <div class="friend-pic-container pt-5 grid grid-cols-4 gap-4 grid-row-2">
         <figure>
           <figcaption><a href="#">Java</a></figcaption>
           <img src="pictures/myspace-records.jpg">
