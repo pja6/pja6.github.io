@@ -60,8 +60,8 @@
     </section>
 
     <!-- MySpace URL -->
-    <section class="myspace-url-box space-y-2">
-      <h3><b>GitHub URL:</b></h3>
+    <section class="myspace-url-box space-y-2 border-2 border-[#6699CC] w-96 pl-2">
+      <h3 class="text-sm font-semibold mb-0"><b>GitHub URL:</b></h3>
       <a href="https://www.github.com/pja6" class="text-blue-500">https://www.github.com/pja6</a>
     </section>
 
@@ -72,13 +72,14 @@
           <h2 class="sidebar-table-h2 text-xl font-semibold">Paul's Interests</h2>
         </caption>
         <tbody>
-          <tr>
-            <th class="sidebar-table-header" scope="row">General</th>
-            <td class="sidebar-table-data">
-              <p>Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>
-            </td>
-          </tr>
-        </tbody>
+  <tr>
+    <th class="sidebar-table-header text-center py-2" scope="row">General</th>
+    <td class="sidebar-table-data text-left py-2">
+      <p class="mt-0 mb-0 last:mb-0">Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>
+    </td>
+  </tr>
+</tbody>
+
       </table>
     </section>
 
@@ -103,7 +104,7 @@
           </tr>
           <tr>
             <th class="sidebar-table-header" scope="row">Ethnicity:</th>
-            <td class="sidebar-table-data"></td>
+            <td class="sidebar-table-data">Hispanic</td>
           </tr>
           <tr>
             <th class="sidebar-table-header" scope="row">Zodiac Sign:</th>
@@ -131,28 +132,28 @@
           <tr>
             <th class="sidebar-table-header" scope="row">
               <ul>
-                <li><a href="#">University Of California-Los Angeles</a></li>
-                <li>Los Angeles, CALIFORNIA</li>
-                <li>Graduated: <a href="#">2000</a></li>
-                <li>Degree: Master's Degree</li>
-                <li>Major: Film - Critical Studies</li>
+                <li><a href="#">Eastern Washington University</a></li>
+                <li>Spokane, WA</li>
+                <li>Graduated: <a href="#">TBD</a></li>
+                <li>Degree: Bachelor's Degree</li>
+                <li>Major: Computer Science</li>
               </ul>
             </th>
-            <td class="sidebar-table-data">1999 to 2000</td>
+            <td class="sidebar-table-data">2022-Present</td>
           </tr>
           <tr>
             <th class="sidebar-table-header" scope="row">
               <ul>
-                <li><a href="#">University Of California-Berkeley</a></li>
-                <li>Berkeley, CALIFORNIA</li>
-                <li>Graduated: <a href="#">1997</a></li>
+                <li><a href="#">University Of Washington-Seattle</a></li>
+                <li>Seattle, WA</li>
+                <li>Graduated: <a href="#">2014</a></li>
                 <li>Student status: Alumni</li>
                 <li>Degree: Bachelor's Degree</li>
-                <li>Major: English & Rhetoric</li>
-                <li>Clubs: DECAL: Literary Theory</li>
+                <li>Major: Psychology & Philosophy</li>
+                <li>Clubs: Film Club</li>
               </ul>
             </th>
-            <td class="sidebar-table-data">1993 to 1996</td>
+            <td class="sidebar-table-data">2010 to 2014</td>
           </tr>
         </tbody>
       </table>
@@ -160,3 +161,96 @@
   </aside>
 </div>
 <!-- Profile Side Bar Ends -->
+
+<style>
+
+ /*
+  ========================================
+  Sidebar Table Class
+  ========================================
+  */
+  .sidebar-table {
+    border: 2px solid rgb(102, 153, 204);
+    display: table;
+    border-collapse: separate;
+    border-spacing: 3px;
+  }
+  
+  .sidebar-table-h2 {
+    background-color: rgb(102, 153, 204);
+    color: white;
+    text-align: left;
+    height: 17px;
+    padding-left: 15px;
+    padding-top: 2px;
+  }
+  
+  .sidebar-table-header {
+    vertical-align: top;
+    text-align: left;
+    width: 107px;
+    background-color: rgb(177, 208, 240);
+    color: #336699;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 8pt;
+  }
+  
+  .sidebar-table-data {
+    width: 184px;
+    background-color: rgb(213, 232, 251);
+    padding: 3px;
+  }
+  
+  /*
+  ========================================
+  Interests
+  ========================================
+  */
+  .interests p {
+    margin-top: 0;
+  }
+  
+  .interests p:only-child,
+  .interests p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .interests table {
+    margin-bottom: 13px;
+  }
+  
+  /*
+  ========================================
+  Details
+  ========================================
+  */
+  .details table {
+    margin-bottom: 22px;
+  }
+  
+  /*
+  ========================================
+  Schools
+  ========================================
+  */
+  .schools .sidebar-table-header {
+    width: 228px;
+    color: black;
+    font-weight: normal;
+  }
+  
+  .schools .sidebar-table-data {
+    width: 63px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .schools ul {
+    margin-bottom: 2em;
+  }
+  
+  
+
+
+</style>
