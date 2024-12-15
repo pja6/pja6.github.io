@@ -11,12 +11,13 @@ const { current = '' } = Astro.props;
   ========================================
   */
   .navbar {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    background-color: rgb(102, 153, 204);
-    height: 26px;
-  }
+  display: flex;
+  align-items: center;
+  background-color: rgb(102, 153, 204);
+  height: 2rem;
+  width: 100%; /* Make sure it stretches full width */
+  padding: 0 1rem; /* Optional: add padding for spacing */
+}
   
   .navbar ul {
     display: flex;
@@ -47,12 +48,12 @@ const { current = '' } = Astro.props;
     font-weight: 700;
     justify-content: flex-end;
     text-transform: uppercase;
+    height: 2rem;
   }
 
   a {
     color: inherit;
     text-decoration: none;
-    padding: 10px 5px;
     display: block;
     position: relative;
     margin-left: 20px;
@@ -97,12 +98,13 @@ const { current = '' } = Astro.props;
 
 </style>
 
-<nav class="navbar">
+<nav class="navbar text-sm">
     
 
-  
+  <div class="">
   <a class={current === "" ? "selected" : ""} href='/'>home</a>
   <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
   <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
+  </div>
  
 </nav>
