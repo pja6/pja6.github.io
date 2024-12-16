@@ -6,8 +6,54 @@ import ThemeToggleButton from './ThemeToggleButton.svelte';
 const { current = '' } = Astro.props;
 ---
 
+
+    <!-- Main Header Begins -->
+  <header class="main-header">
+    <nav class="search-bar">
+
+      <ul class="topnav home">
+        <li class="pl-10"><a href="#">PaulSpace.com</a></li>
+        <li><a class={current === "" ? "selected" : ""} href='/'>Home</a></li>
+      </ul>
+
+      <!--
+      <form>
+        <label>
+          The Web
+          <input type="radio" name="search-type" value="the-web">
+        </label>
+
+        <label>
+          PaulSpace
+          <input type="radio" name="search-type" value="PaulSpace">
+        </label>
+
+        <label>
+          <input class="searchbox text-black text-opacity-80 pl-2"type="text" placeholder="psst this doesn't work" name="search">
+        </label>
+
+        <input class="submit-btn" type="submit" name="submit-button" value="Search">
+      </form>
+ -->
+      <span class="flex-grow"></span>
+      <div class="theme-toggle-container flex w-full justify-end pr-5">
+        <ThemeToggleButton client:load />
+      </div>
+    </nav>
+    <Nav current={current} />
+
+</header>
+
 <style>
-/*
+  .searchbox{
+    padding-top: .20rem;
+    padding-bottom: .20rem;
+    font-size:9pt;
+  }
+
+
+
+  /*
   ========================================
   Main Header
   ========================================
@@ -90,8 +136,6 @@ const { current = '' } = Astro.props;
   
 
 
-
-
   header {
     display: flex;
     margin: 0 auto;
@@ -104,48 +148,5 @@ const { current = '' } = Astro.props;
     header {
       padding: 2em 0;
     }
-  }
-</style>
-
-    <!-- Main Header Begins -->
-  <header class="main-header">
-    <nav class="search-bar">
-
-      <ul class="topnav home">
-        <li class="pl-10"><a href="#">PaulSpace.com</a></li>
-        <li><a class={current === "" ? "selected" : ""} href='/'>Home</a></li>
-      </ul>
-
-      <form>
-        <label>
-          The Web
-          <input type="radio" name="search-type" value="the-web">
-        </label>
-
-        <label>
-          PaulSpace
-          <input type="radio" name="search-type" value="PaulSpace">
-        </label>
-
-        <label>
-          <input class="searchbox text-black text-opacity-80 pl-2"type="text" placeholder="psst this doesn't work" name="search">
-        </label>
-
-        <input class="submit-btn" type="submit" name="submit-button" value="Search">
-      </form>
-
-      <div class="theme-toggle-container">
-        <ThemeToggleButton client:load />
-      </div>
-    </nav>
-    <Nav current={current} />
-
-</header>
-
-<style>
-  .searchbox{
-    padding-top: .20rem;
-    padding-bottom: .20rem;
-    font-size:9pt;
   }
 </style>
