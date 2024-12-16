@@ -10,10 +10,10 @@
 
     <br>
     <section class="blurbs">
-      <header class="main-section-header">
-        <h2 class="main-section-h2">Paul's Blurbs</h2>
+      <header class="main-section-header mb-0 pb-0 h-10">
+        <h6 class="pl-5 text-orange-600">Paul's Blurb</h6>
       </header>
-
+      <article class="text-sm">
       <h3>About me:</h3>
       <p>I'm here to help you with <b>MySpace</b>. Send me a message if you're confused by anything. <span class="info">Before asking me a question, please check the <a href="#">FAQ</a> to see if your question has already been answered.</span></p>
 
@@ -27,6 +27,7 @@
 
       <h3>Who I'd like to meet:</h3>
       <p>I'd like to meet people who educate, inspire or entertain me... I have a few close friends I've known all my life. I'd like to make more. </p>
+    </article>
     </section>
 
     <section class="friends">
@@ -81,3 +82,144 @@
 
   </main>
 </div>
+
+<style>
+
+
+*/
+  main {
+    grid-area: main;
+  }
+  
+  /*
+  ========================================
+  User Network
+  ========================================
+  */
+  .user-network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 433px;
+    margin: auto;
+    height: 75px;
+    border: 2px solid black;
+    margin-top: 13px;
+  }
+  
+  .user-network h2 {
+    font-size: 12pt;
+  }
+  
+  /*
+  ========================================
+  Blog
+  ========================================
+  */
+  .blog {
+    display: grid;
+    grid-auto-rows: 29px;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-left: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .blog p {
+    margin-top: 3px;
+  }
+  
+  /*
+  ========================================
+  Blurbs
+  ========================================
+  */
+  .main-section-header {
+    background-color: #ffcc99;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+  
+  .main-section-h2 {
+    color: #FF6600;
+    margin-left: 20px;
+  }
+  
+  .blurbs h3 {
+    margin: 0;
+    color: #FF6600;
+    font-size: 9pt;
+    margin-left: 15px;
+  }
+  
+  .blurbs p:nth-of-type(5) {
+    margin-bottom: 2em;
+  }
+  
+  .blurbs p {
+    margin: 0 10px 15px 15px;
+  }
+  
+  .info {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /*
+  ========================================
+  Friend Space
+  ========================================
+  */
+  .friends header {
+    margin-bottom: 6px;
+  }
+  
+  .friends p:nth-of-type(1) {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  
+  .focus-highlight {
+    color: #cc0000;
+    font-weight: normal;
+    font-size: 10pt;
+  }
+  
+  .friend-pic-container {
+    display: grid;
+    grid-template-columns: repeat(4, 109px);
+    grid-template-rows: 160px 193px;
+  }
+  
+  .friend-pic-container figure {
+    margin: 0;
+  }
+  
+  .friend-pic-container figcaption {
+    text-align: center;
+  }
+  
+  .friend-pic-container img {
+    display: block;
+    margin: auto;
+  }
+  
+  .friends-list-link {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .friends-list-link {
+    margin-top: 7px;
+    margin-right: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .friends-list-link a {
+    color: #cc0000;
+  }
+  
+
+
+</style>
