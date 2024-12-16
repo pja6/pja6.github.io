@@ -128,7 +128,7 @@ const { current = '' } = Astro.props;
         </label>
 
         <label>
-          <input type="text" name="search">
+          <input class="searchbox text-black text-opacity-80 pl-2"type="text" placeholder="psst this doesn't work" name="search">
         </label>
 
         <input class="submit-btn" type="submit" name="submit-button" value="Search">
@@ -141,3 +141,11 @@ const { current = '' } = Astro.props;
     <Nav current={current} />
 
 </header>
+
+<style>
+  .searchbox{
+    padding-top: .20rem;
+    padding-bottom: .20rem;
+    font-size:9pt;
+  }
+</style>
