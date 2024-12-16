@@ -12,3 +12,4 @@
 
 #### As well as some styling elements from a recreation of Tom's original MySpace page by [William Wittenbrock](https://wittenbrock.github.io/toms-myspace-page/)
 
+##### *P.s.* just noticed that clicking on the the portfolio link while you're already on the page breaks the daisyUI component for some reason, just go back to home and reload and it should work again
