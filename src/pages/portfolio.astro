@@ -6,15 +6,22 @@ const description = 'A a few projects I\'m proud of.';
 const permalink = `${Astro.site.href}portfolio`;
 ---
 <BaseLayout title={title} description={description} permalink={permalink}>
+    <div class="flex items-center justify-center mb-0 pt-5">
+    <h5>Here are a few of my recent web dev projects</h5>
+</div>
     <div class="carousel">
     <div id="slide1" class="carousel-item relative w-full">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+        src="paulspace.png"
         class="w-full" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide4" class="btn btn-circle">❮</a>
         <a href="#slide2" class="btn btn-circle">❯</a>
       </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-opacity-65 bg-gray-700 text-white p-4 text-center">
+        <p>My Personal Website using Astro and Tailwind</p>
+      </div>
+    
     </div>
     <div id="slide2" class="carousel-item relative w-full">
       <img
@@ -23,6 +30,9 @@ const permalink = `${Astro.site.href}portfolio`;
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide1" class="btn btn-circle">❮</a>
         <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-opacity-65 bg-gray-700 text-white p-4 text-center">
+        <p>Keanu Reeves API project using Astro and Tailwind</p>
       </div>
     </div>
     <div id="slide3" class="carousel-item relative w-full">
@@ -33,6 +43,9 @@ const permalink = `${Astro.site.href}portfolio`;
         <a href="#slide2" class="btn btn-circle">❮</a>
         <a href="#slide4" class="btn btn-circle">❯</a>
       </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-opacity-65 bg-gray-700 text-white p-4 text-center">
+        <p>Smart Mirror project using Weather/Date/Time APIs and Astro/Tailwind</p>
+      </div>
     </div>
     <div id="slide4" class="carousel-item relative w-full">
       <img
@@ -42,6 +55,9 @@ const permalink = `${Astro.site.href}portfolio`;
         <a href="#slide3" class="btn btn-circle">❮</a>
         <a href="#slide1" class="btn btn-circle">❯</a>
       </div>
+      <div class="absolute bottom-0 left-0 right-0 bg-opacity-65 bg-gray-700 text-white p-4 text-center">
+        <p>Minimal Date/Time styled with Tailwind</p>
+      </div>
     </div>
   </div>
 </BaseLayout>
@@ -50,7 +66,7 @@ const permalink = `${Astro.site.href}portfolio`;
 
 .carousel {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 1rem;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
