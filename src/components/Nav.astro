@@ -17,6 +17,8 @@ const { current = '' } = Astro.props;
   height: 2rem;
   width: 100%; /* Make sure it stretches full width */
   padding: 0 1rem; /* Optional: add padding for spacing */
+  margin-top: 0;
+  margin-bottom: 0;	
 }
   
   .navbar ul {
@@ -49,6 +51,8 @@ const { current = '' } = Astro.props;
     justify-content: flex-end;
     text-transform: uppercase;
     height: 2rem;
+    margin-top:0;
+    margin-bottom:0;
   }
 
   a {
@@ -102,9 +106,9 @@ const { current = '' } = Astro.props;
     
 
   <div class="">
-  <a class={current === "" ? "selected" : ""} href='/'>home</a>
-  <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
-  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
+  
+  <a class={current === "about" ? "selected" : ""} href='/about'>Resumé</a>
+  <a class={current === "blog" ? "selected" : ""} href='/blog'>Portfolio</a>
   </div>
  
 </nav>

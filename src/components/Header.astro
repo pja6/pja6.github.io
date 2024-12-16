@@ -113,7 +113,7 @@ const { current = '' } = Astro.props;
 
       <ul class="topnav home">
         <li class="pl-10"><a href="#">PaulSpace.com</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a class={current === "" ? "selected" : ""} href='/'>Home</a></li>
       </ul>
 
       <form>

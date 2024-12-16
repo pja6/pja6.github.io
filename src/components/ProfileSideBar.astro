@@ -2,59 +2,62 @@
 <div class="flex flex-col w-full">
   <aside class="profile-sidebar space-y-6">
     
-    <div class="profile-picture-container grid grid-cols-1 md:grid-cols-2 gap-6 items-center w-96 pl-10">
+    <div class="profile-picture-container grid grid-cols-1 md:grid-cols-2 gap-4 items-center w-96 pl-10">
       <!-- Left Column: Name and Profile Image -->
-      <div class="flex flex-col items-center text-center">
+      <div class="flex flex-col items-center text-center mb-0">
         <!-- Name on top -->
         <header class="text-2xl font-bold mb-4">
           Paul Aguilar
         </header>
-        <!-- Profile Image -->
-        <div class="flex justify-center mb-4">
-          <img class="profile-pic h-48 w-48 object-cover mb-0" src="me.jpg" alt="This is me.">
+        <!-- Profile Image and Text -->
+        <div class="flex flex-col items-center justify-center mb-4">
+          <!-- Profile Image -->
+          <img class="profile-pic h-52 w-48 object-cover mb-0" src="me.jpg" alt="This is me.">
+          
+          <!-- "View My" Links (Force this onto a new line) -->
+          <p class="pics-videos block text-sm mt-2">View My: 
+            <a href="#" class="text-sm font-bold">Pics</a> | 
+            <a href="#" class="text-sm font-bold">Videos</a>
+          </p>
         </div>
       </div>
     
       <!-- Right Column: Text Content -->
-      <div class="text-sm pt-10">
+      <div class="text-sm pt-10 pb-16">
     
         <ul class="gender-age space-y-1 text-sm">
           <p class="personal-msg text-left mb-4"><b>":-)"</b></p>
 
           <li>Male</li>
-          <li>30 years old</li>
+          <li>33 years old</li>
           <li>Spokane,</li>
           <li>WA</li>
           <li>United States</li>
         </ul>
     
     <ul class="last-login mt-4 space-y-0 text-sm">
-      <li>Last Login:</li>
+      <li class="mb-0">Last Login:</li>
       <li>4/22/2006</li>
     </ul>
       </div>
       
 
-      <div class="text-center" >
-        <p class="pics-videos text-sm mt-0">View My: <a href="#" class=" text-sm font-bold">Pics</a> | <a href="#" class=" text-sm font-bold">Videos</a></p>
-      </div>
+    
     </div>
 
     <!-- Contact Box -->
-    <section class="contact-box space-y-6 border-2 border-[#6699CC] w-96">
+    <section class="contact-box border-2 border-[#6699CC] h-54 w-96" >
       <h2 class="text-xl font-semibold bg-[#6699CC] text-white mt-0 pl-3">Contacting Paul</h2>
       <div class="grid grid-cols-2 gap-4 text-sm pl-7">
-        <div class="mt-0 pb-0">
-          <p class="text-sm">Send a Message</p>
-          <p class="text-sm">Forward to Friend</p>
-          <p class="text-sm">Add to Friends</p>
-          <p class="text-sm">Add to Favorites</p>
+        <div>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href="mailto:paguilar4@ewu.edu">Email</a></p>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href="https://www.linkedin.com/in/paul-aguilar-12134296/">Linkedin</a></p>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href="https://bsky.app/">Bluesky</a></p>
         </div>
         <div>
-          <p class="text-sm">Instant Message</p>
-          <p class="text-sm">Block User</p>
-          <p class="text-sm">Add to Group</p>
-          <p class="text-sm">Rank User</p>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href="https://github.com/pja6">Github</a></p>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href="https://codepen.io/pja6"> CodePen</a></p>
+          <p class="p-0 m-0 font-semibold"><a class="text-sm" href='/blog'>Portfolio</a></p>
         </div>
       </div>
     </section>
@@ -75,7 +78,9 @@
   <tr class="w-96">
     <th class="sidebar-table-header text-center py-2" scope="row">General</th>
     <td class="sidebar-table-data text-left py-2">
-      <p class="mt-0 mb-0 last:mb-0 text-sm">Internet, Movies, Reading, Dancing, Karaoke, Baseball, Language, Culture, History of Communism, Philosophy, Singing/Writing Music, Running, Finding New Food, Weight Lifting, Hiking, WWI Aviation, Travel, Building alternate communities</p>
+      <p class="mt-0 mb-0 last:mb-0 text-sm text-black">Internet, Movies, Reading, Dancing, Baseball, 
+        Language, Culture, History of Philosophy, Alternative Music, Running, Finding New Food, Photography, 
+        Hiking, Science Fiction, Travel, Building communities</p>
     </td>
   </tr>
 </tbody>
@@ -84,37 +89,37 @@
     </section>
 
     <!-- Paul's Details Section -->
-    <section class="details space-y-4 w-96">
+    <section class="details space-y-4 w-96 text-black">
       <table class="sidebar-table w-full">
         <caption>
           <h2 class="sidebar-table-h2 text-lg font-serif font-bold py-6">Paul's Details</h2>
         </caption>
         <tbody>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Status:</th>
             <td class="sidebar-table-data">Looking for work</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Here For:</th>
             <td class="sidebar-table-data">Networking, Friends</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Hometown:</th>
             <td class="sidebar-table-data">Lakewood, WA</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Ethnicity:</th>
             <td class="sidebar-table-data">Hispanic</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Zodiac Sign:</th>
             <td class="sidebar-table-data">Libra</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Smoke / Drink:</th>
             <td class="sidebar-table-data">No / No</td>
           </tr>
-          <tr>
+          <tr class="text-sm">
             <th class="sidebar-table-header" scope="row">Occupation:</th>
             <td class="sidebar-table-data">Student</td>
           </tr>
@@ -123,7 +128,7 @@
     </section>
 
     <!-- Paul's Schools Section -->
-    <section class="schools space-y-4 w-96">
+    <section class="schools space-y-4 w-96 text-black">
       <table class="sidebar-table w-full">
         <caption>
           <h2 class="sidebar-table-h2 text-lg font-serif font-bold py-6">Paul's Schools</h2>
